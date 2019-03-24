@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/fonts/fontsTelefonica.css",
               "src/styles.css"
             ],
             "scripts": []
