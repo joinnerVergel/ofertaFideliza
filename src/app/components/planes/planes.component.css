@@ -1,0 +1,23 @@
+.contenedor{
+    margin: 16px;
+}
+.imagen{
+    background: transparent url('../../../assets/img/Imagen1.png') no-repeat 10px 10px/40px;
+    width: 100%;
+    height: 112px;
+    padding-left: 60px;
+    font-family: telefonicaRegular;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.texto p {
+    margin: 5px;
+}
+.texto p:first-child+p, .texto p:last-child{
+    color:#757575;
+}
+.texto p:last-child{
+   font-family: telefonicaBold;
+}
