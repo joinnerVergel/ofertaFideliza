@@ -45,3 +45,74 @@
     font-size: 16px;
     font-weight: bold;
 }
+.imagen3{
+    background: transparent url('../../../assets/img/Imagen3.png') no-repeat 10px 10px/40px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 20px 20px 0px 60px;
+    font-family: telefonicaRegular;
+}
+.imagen4{
+    background: transparent url('../../../assets/img/Imagen4.png') no-repeat 10px 0px/40px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 10px 20px 0px 60px;
+    font-family: telefonicaRegular;
+}
+.imagen5{
+    background: transparent url('../../../assets/img/Imagen5.png') no-repeat 10px 0px/40px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 10px 20px 0px 60px;
+    font-family: telefonicaRegular;
+}
+.line{
+    height: 1.5px;
+    background-color: #ddd;
+    margin: 16px;
+}
+.redes{
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: telefonicaRegular;
+    margin: 0px 16px;
+    padding-bottom: 20px;
+}
+.redes_sociales {
+   float: right;
+}
+.imagen {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0 15px;
+}
+.imagen.whatsapp{
+    background: transparent url('../../../assets/img/Imagen7.png') no-repeat center/25px;
+}
+.imagen.twitter{
+    background: transparent url('../../../assets/img/Imagen8.png') no-repeat center/25px;
+}
+.imagen.facebook{
+    background: transparent url('../../../assets/img/Imagen6.png') no-repeat center/20px;
+}
+.mensaje {
+    font-family: telefonicaRegular;
+    color: #757575;
+    font-size: 14px;
+    margin: 0px 14px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.terminos {
+    margin: 0 16px;
+}
+.terminos span{
+    color: #00a9e0;
+    margin-left: 5px;
+    cursor: pointer;
+}
