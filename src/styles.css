@@ -3,3 +3,7 @@
 body {
     margin: 50px 0 0 0;
 }
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #57c700;
+}

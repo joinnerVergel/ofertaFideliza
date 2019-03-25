@@ -31,6 +31,15 @@ export class HomeComponent implements OnInit {
     if(this.router.url.includes("/detalle",0)){
       return "Cambio de plan";
     }
+    if(this.router.url.includes("/terminos",0)){
+      return "Términos y condiciones";
+    }
+    if(this.router.url.includes("/cambioExitoso",0)){
+      return "Cambio de plan";
+    }
+    if(this.router.url.includes("/error",0)){
+      return "Cambio de plan";
+    }
     return null;
   }
 

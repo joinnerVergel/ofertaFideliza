@@ -36,9 +36,9 @@
   <div class="line"></div>
   <div class="redes">Redes sociales ilimitadas
     <div class="redes_sociales">
-      <div class="imagen whatsapp"></div>
-      <div class="imagen facebook"></div>
-      <div class="imagen twitter"></div>
+      <div class="imagen whatsapp" *ngIf="verWhatsapp()"></div>
+      <div class="imagen facebook" *ngIf="verFacebook()"></div>
+      <div class="imagen twitter" *ngIf="verTwitter()"></div>
     </div>
   </div>
   <div class="mensaje">
@@ -46,7 +46,7 @@
   </div>
   <div class="terminos">
     <form [formGroup]="terminosForm">
-      <mat-checkbox formControlName="terminos" (change)="cambioTerminos()">Acepto<a routerLink="../terminos">términos legales y condiciones</a></mat-checkbox>
+      <mat-checkbox formControlName="terminos" (change)="cambioTerminos()">Acepto<a routerLink="../terminos" (click)="setEvento('3')">términos legales y condiciones</a></mat-checkbox>
     </form>
     <div  class="error"  *ngIf="errorTerminos">Para contratar el plan, debes aceptar términos y condiciones.</div>
   </div>
