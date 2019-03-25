@@ -30,6 +30,8 @@ export class PlanesComponent implements OnInit {
     this.ofertaService.usuarioAutenticacion=new autenticacion();
     this.ofertaService.usuarioAutenticacion.Key = params['key'];
     this.ofertaService.usuarioAutenticacion.NumeroCelular = params['numberPhone'];
+    this.ofertaService.keyEncrypt=params['key'];
+    this.ofertaService.numberPhoneEncrypt=params['numberPhone'];
     // this.ofertaService.usuarioAutenticacion.Token="VMMfFVf";
   });
   console.log(this.ofertaService.usuarioAutenticacion);
@@ -153,6 +155,10 @@ export class PlanesComponent implements OnInit {
     WhatsappActual: "CHAT DE WHATSAPP:ILIMITADO",
     WhatsappOferta: "CHAT DE WHATSAPP:INCLUIDO"
 }     
+  }
+
+  redirigirDetalleOferta(){
+    this.router.navigate(['../detalle']);
   }
 
 }

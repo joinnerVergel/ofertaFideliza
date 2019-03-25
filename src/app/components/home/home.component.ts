@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { OfertaService } from 'src/app/services/oferta.service';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor( private router:Router) { }
+  constructor( private router:Router, private ofertaService:OfertaService) { }
 
   ngOnInit() {
   }
@@ -18,7 +19,16 @@ export class HomeComponent implements OnInit {
     if(this.router.url.includes("/planes",0)){
       return "Oferta sugerida";
     }
+    if(this.router.url.includes("/detalle",0)){
+      return "Cambio de plan";
+    }
     return null;
+  }
+
+  returnTo(){
+    if(this.router.url.includes("/detalle",0)){
+      this.router.navigate(['/planes/'+this.ofertaService.keyEncrypt+'/'+this.ofertaService.numberPhoneEncrypt]);
+    }
   }
 
 }

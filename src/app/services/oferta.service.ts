@@ -8,7 +8,8 @@ import { autenticacion } from '../models/Autenticacion';
   providedIn: 'root'
 })
 export class OfertaService {
-
+  public keyEncrypt:string=null;
+  public numberPhoneEncrypt:string=null;
   public datosOferta:oferta=null;
   public usuarioAutenticacion:autenticacion =null;
   constructor( private http:HttpClient) { }
@@ -33,6 +34,17 @@ export class OfertaService {
 
   getTransform(data:any){
     return this.http.post<any>(transformarData, data, this.getHttpOptions()).pipe();
+  }
+
+
+  isAuthenticated(){
+    if(this.usuarioAutenticacion==null){
+      return false;
+    }
+    else{
+      return true;
+    }
+    
   }
 
   

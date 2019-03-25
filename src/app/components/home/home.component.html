@@ -1,5 +1,7 @@
 <mat-toolbar>
-  <i class="material-icons">   arrow_back_ios  </i>
+  <button mat-icon-button class="back" (click)="returnTo()">
+      <mat-icon aria-label="regresar">arrow_back_ios</mat-icon>
+  </button>
   <span class="name">{{getNameWindow()}}</span>
 </mat-toolbar>
 <div>

@@ -20,3 +20,6 @@ mat-toolbar{
     width: 100%;
 
 }
+.back{
+    background-color: transparent;
+}

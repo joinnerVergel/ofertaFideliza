@@ -1,3 +1,4 @@
+<div class="titulo">Tu plan actual</div>
 <div class="contenedor">
   <div  class="imagen">
     <div class="texto">
@@ -9,11 +10,13 @@
   <div class="mensaje">
     Movistar piensa en ti y a encontrado la mejor oferta con más Gigas, más beneficios, más fácil
   </div>
-  <div  class="imagen">
+  <div  class="imagen2">
     <div class="texto">
       <p> {{this.ofertaService.datosOferta.DataOferta}} +  Min. {{this.ofertaService.datosOferta.MinutosMovistarOferta}}</p>
       <p>mensual</p>
       <p> $ {{this.ofertaService.datosOferta.CargoBasicoOferta}}</p>
     </div>
+    <button mat-button (click)="redirigirDetalleOferta()">Seleccionar</button>
   </div>
 </div>
+

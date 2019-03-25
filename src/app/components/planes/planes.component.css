@@ -1,7 +1,13 @@
 .contenedor{
     margin: 16px;
 }
-.imagen{
+.titulo{
+    font-family: telefonicaRegular;
+    margin: 15px 20px;
+    color: #2a2a3e;
+    font-size: 16px;
+}
+.imagen,.imagen2{
     background: transparent url('../../../assets/img/Imagen1.png') no-repeat 10px 10px/40px;
     width: 100%;
     height: 112px;
@@ -11,6 +17,10 @@
     border: 1px solid #ddd;
     box-sizing: border-box;
     padding-top: 10px;
+}
+.imagen2{
+    background: transparent url('../../../assets/img/Imagen2.png') no-repeat 10px 10px/40px;
+    position: relative;
 }
 .texto p {
     margin: 5px;
@@ -27,4 +37,12 @@
     font-size: 14px;
     margin: 20px 0px;
     text-align: left;
+}
+button{
+    border-radius: 14px;
+    background-color: #5bc500;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 40%;
 }
