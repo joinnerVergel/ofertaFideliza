@@ -1,0 +1,7 @@
+<div class="titulo">Términos y condiciones</div>
+<div class="terminos" [ngClass]="claseTexto">
+  {{terminosCondiciones}}
+</div>
+<div class="boton" *ngIf="botonVisible()">
+  <button mat-button (click)="seguirLeyendo()">Seguir Leyendo</button>
+</div>

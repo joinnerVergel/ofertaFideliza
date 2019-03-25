@@ -29,6 +29,9 @@ export class HomeComponent implements OnInit {
     if(this.router.url.includes("/detalle",0)){
       this.router.navigate(['/planes/'+this.ofertaService.keyEncrypt+'/'+this.ofertaService.numberPhoneEncrypt]);
     }
+    if(this.router.url.includes("/terminos",0)){
+      this.router.navigate(['/detalle/']);
+    }
   }
 
 }

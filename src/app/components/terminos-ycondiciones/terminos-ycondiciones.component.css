@@ -1,0 +1,24 @@
+.titulo{
+    font-family: telefonicaRegular;
+    margin: 15px 20px;
+    color: #2a2a3e;
+    font-size: 16px;
+}
+.terminos{
+    font-family: telefonicaLight;
+    margin: 15px 20px;
+    max-height: 400px;
+    overflow-y: hidden;
+}
+.terminos.seguirLeyendo{
+    overflow-y: auto;
+    max-height: unset;
+}
+.boton button{
+    border-radius: 5px;
+    background-color: #5bc500;
+    color: #fff;
+    width: 90%;
+    margin: 30px auto;
+    display: block;
+}

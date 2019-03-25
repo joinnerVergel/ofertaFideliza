@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { retornaOferta, transformarData, token } from './urls';
+import { retornaOferta, transformarData, token, terminosYCondiciones } from './urls';
 import { oferta } from '../models/oferta';
 import { autenticacion } from '../models/Autenticacion';
 
@@ -25,8 +25,8 @@ export class OfertaService {
     return httpOptions;
   }
 
-  getToken(data:any){
-    return this.http.post<oferta>(token, data, this.getHttpOptions()).pipe();
+  getTerminos(){
+    return this.http.get(terminosYCondiciones,this.getHttpOptions());
   }
   getDatosOferta(data:any){
     return this.http.post<oferta>(retornaOferta, data, this.getHttpOptions()).pipe();
