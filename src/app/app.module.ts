@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ErrorComponent } from './components/error/error.component';
 import { DetalleOfertaComponent } from './components/detalle-oferta/detalle-oferta.component';
 import { TerminosYCondicionesComponent } from './components/terminos-ycondiciones/terminos-ycondiciones.component';
+import { CambioExitosoComponent } from './components/cambio-exitoso/cambio-exitoso.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { TerminosYCondicionesComponent } from './components/terminos-ycondicione
     PlanesComponent,
     ErrorComponent,
     DetalleOfertaComponent,
-    TerminosYCondicionesComponent
+    TerminosYCondicionesComponent,
+    CambioExitosoComponent
   ],
   imports: [
     HttpClientModule,
@@ -31,6 +33,7 @@ import { TerminosYCondicionesComponent } from './components/terminos-ycondicione
        {path:"planes/:key/:numberPhone", component:PlanesComponent},
        {path:"detalle", component:DetalleOfertaComponent},
        {path:"terminos", component:TerminosYCondicionesComponent},
+       {path:"cambioExitoso", component:CambioExitosoComponent},
        {path:"error", component:ErrorComponent}
     ])
   ],

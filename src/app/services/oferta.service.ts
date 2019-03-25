@@ -28,6 +28,9 @@ export class OfertaService {
   getTerminos(){
     return this.http.get(terminosYCondiciones,this.getHttpOptions());
   }
+  getToken(data:any){
+    return this.http.post<oferta>(token, data, this.getHttpOptions()).pipe();
+  }
   getDatosOferta(data:any){
     return this.http.post<oferta>(retornaOferta, data, this.getHttpOptions()).pipe();
   }

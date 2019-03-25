@@ -15,6 +15,14 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  verBoton(){
+    if(this.router.url.includes("/cambioExitoso",0)){
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
   getNameWindow(){
     if(this.router.url.includes("/planes",0)){
       return "Oferta sugerida";

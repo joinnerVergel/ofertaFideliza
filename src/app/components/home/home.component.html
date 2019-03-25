@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <button mat-icon-button class="back" (click)="returnTo()">
+  <button mat-icon-button class="back" (click)="returnTo()" *ngIf="verBoton()">
       <mat-icon aria-label="regresar">arrow_back_ios</mat-icon>
   </button>
   <span class="name">{{getNameWindow()}}</span>
