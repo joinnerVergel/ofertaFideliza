@@ -1,0 +1,35 @@
+.boton{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.boton button{
+    border-radius: 5px;
+    background-color: #5bc500;
+    color: #fff;
+    width: 90%;
+    margin: 30px auto;
+    display: block;
+}
+
+.imagenExito{
+    background: transparent url('../../../assets/img/Imagen10.png') no-repeat center/112px;
+    width: 112px;
+    height: 112px;
+    margin: 40px auto;
+}
+.titulo{
+    color:#2a2a3c;
+    font-family: telefonicaBold;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    width: 188px;
+    margin: 0 auto;
+}
+.texto{
+    text-align: center;
+    margin: 40px;
+    font-size: 14px;
+    font-family: telefonicaRegular;
+}

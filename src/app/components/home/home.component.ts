@@ -16,7 +16,8 @@ export class HomeComponent implements OnInit {
   }
 
   verBoton(){
-    if(this.router.url.includes("/cambioExitoso",0)){
+    if(this.router.url.includes("/cambioExitoso",0) ||
+    this.router.url.includes("/error",0)){
       return false;
     }
     else{
