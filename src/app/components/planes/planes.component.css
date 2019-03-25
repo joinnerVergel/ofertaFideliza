@@ -21,3 +21,10 @@
 .texto p:last-child{
    font-family: telefonicaBold;
 }
+.mensaje{
+    font-family: telefonicaRegular;
+    color: #757575;
+    font-size: 14px;
+    margin: 20px 0px;
+    text-align: left;
+}

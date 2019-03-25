@@ -1,5 +1,5 @@
 export class autenticacion{
-    Key:String;
+    Key:string;
     NumeroCelular:string;
     Token:string;
 

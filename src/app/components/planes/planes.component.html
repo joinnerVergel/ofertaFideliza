@@ -1,9 +1,19 @@
 <div class="contenedor">
   <div  class="imagen">
     <div class="texto">
-      <p> {{datosOferta.DataActual}} +  min {{datosOferta.MinutosMovistarActual}}</p>
+      <p> {{this.ofertaService.datosOferta.DataActual}} +  min {{this.ofertaService.datosOferta.MinutosMovistarActual}}</p>
       <p>mensual</p>
-      <p> $ {{datosOferta.CargoBasicoActual}}</p>
+      <p> $ {{this.ofertaService.datosOferta.CargoBasicoActual}}</p>
+    </div>
+  </div>
+  <div class="mensaje">
+    Movistar piensa en ti y a encontrado la mejor oferta con más Gigas, más beneficios, más fácil
+  </div>
+  <div  class="imagen">
+    <div class="texto">
+      <p> {{this.ofertaService.datosOferta.DataOferta}} +  Min. {{this.ofertaService.datosOferta.MinutosMovistarOferta}}</p>
+      <p>mensual</p>
+      <p> $ {{this.ofertaService.datosOferta.CargoBasicoOferta}}</p>
     </div>
   </div>
 </div>
