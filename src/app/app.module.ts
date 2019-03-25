@@ -12,6 +12,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { DetalleOfertaComponent } from './components/detalle-oferta/detalle-oferta.component';
 import { TerminosYCondicionesComponent } from './components/terminos-ycondiciones/terminos-ycondiciones.component';
 import { CambioExitosoComponent } from './components/cambio-exitoso/cambio-exitoso.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,8 @@ import { CambioExitosoComponent } from './components/cambio-exitoso/cambio-exito
     CambioExitosoComponent
   ],
   imports: [
+    ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     MatIconModule,
     MatListModule,

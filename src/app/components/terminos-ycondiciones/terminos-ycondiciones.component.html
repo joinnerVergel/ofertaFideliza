@@ -5,3 +5,7 @@
 <div class="boton" *ngIf="botonVisible()">
   <button mat-button (click)="seguirLeyendo()">Seguir Leyendo</button>
 </div>
+
+<div class="boton" *ngIf="!botonVisible()">
+    <button mat-button (click)="aceptarTerminos()">Aceptar</button>
+  </div>

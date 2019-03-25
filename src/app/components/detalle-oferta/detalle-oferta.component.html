@@ -13,37 +13,48 @@
     $ {{this.ofertaService.datosOferta.CargoBasicoOferta}} <span>/mes</span>
   </div>
 </div>
-<div class="divider"></div>
-<div class="titulo2">Tu plan incluye</div>
-<div class="imagen3">
-  <div class="texto">
-    {{this.ofertaService.datosOferta.DataOferta}} por 30 días
+<div class="contenido2">
+  <div class="divider"></div>
+  <div class="titulo2">Tu plan incluye</div>
+  <div class="imagen3">
+    <div class="texto">
+      {{this.ofertaService.datosOferta.DataOferta}} por 30 días
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="imagen4">
+    <div class="texto">
+      Min. {{this.ofertaService.datosOferta.MinutosMovistarOferta}}
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="imagen5">
+    <div class="texto">
+      SMS {{this.ofertaService.datosOferta.SmsOferta}}
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="redes">Redes sociales ilimitadas
+    <div class="redes_sociales">
+      <div class="imagen whatsapp"></div>
+      <div class="imagen facebook"></div>
+      <div class="imagen twitter"></div>
+    </div>
+  </div>
+  <div class="mensaje">
+    Podrás seguir utilizando tus redes sociales favoritas así tus gigas de navegación se hallan terminado
+  </div>
+  <div class="terminos">
+    <form [formGroup]="terminosForm">
+      <mat-checkbox formControlName="terminos" (change)="cambioTerminos()">Acepto<a routerLink="../terminos">términos legales y condiciones</a></mat-checkbox>
+    </form>
+    <div  class="error"  *ngIf="errorTerminos">Para contratar el plan, debes aceptar términos y condiciones.</div>
   </div>
 </div>
-<div class="line"></div>
-<div class="imagen4">
-  <div class="texto">
-    Min. {{this.ofertaService.datosOferta.MinutosMovistarOferta}}
+<div class="total">
+  <div class="txt1">
+    <div>Total a pagar</div>
+    <div>{{this.ofertaService.datosOferta.CargoBasicoOferta}}<span>/mes</span></div>
   </div>
+  <button mat-button (click)="cambiarPlan()" >CAMBIAR PLAN</button>
 </div>
-<div class="line"></div>
-<div class="imagen5">
-  <div class="texto">
-    SMS {{this.ofertaService.datosOferta.SmsOferta}}
-  </div>
-</div>
-<div class="line"></div>
-<div class="redes">Redes sociales ilimitadas
-  <div class="redes_sociales">
-    <div class="imagen whatsapp"></div>
-    <div class="imagen facebook"></div>
-    <div class="imagen twitter"></div>
-  </div>
-</div>
-<div class="mensaje">
-  Podrás seguir utilizando tus redes sociales favoritas así tus gigas de navegación se hallan terminado
-</div>
-<div class="terminos">
-<mat-checkbox>Acepto<span>términos legales y condiciones</span></mat-checkbox>
-</div>
-<!-- {{this.ofertaService.datosOferta.SmsOferta}} -->

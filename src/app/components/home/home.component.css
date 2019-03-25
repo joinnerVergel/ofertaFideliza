@@ -23,3 +23,8 @@ mat-toolbar{
 .back{
     background-color: transparent;
 }
+
+mat-toolbar{
+    position: fixed;
+    top: 0;
+}

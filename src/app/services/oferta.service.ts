@@ -11,6 +11,7 @@ export class OfertaService {
   public keyEncrypt:string=null;
   public numberPhoneEncrypt:string=null;
   public datosOferta:oferta=null;
+  public terminosAceptados:boolean=false;
   public usuarioAutenticacion:autenticacion =null;
   constructor( private http:HttpClient) { }
 
